@@ -5,6 +5,7 @@
 }
 body{
     overflow-x: hidden;
+    background-color: rgb(32, 30, 30);
 }
 .bg_img{
     position: absolute;
@@ -140,21 +141,24 @@ section{
   ::-webkit-scrollbar-thumb {
     background: #888; 
   }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
+    
   }
 
   #conteudo{
+      position: relative;
       margin: auto;
       margin-top: 20px;
-      width: 700px;
-      height: 700px;
+      width: 54%;
+      height: 75%;
       background-color: rgba(0, 0, 0, 0.800);
       border-radius: 10px;
       padding: 30px;
       box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.85);
+      min-width: 440px;
   }
 
   .cont_text{
@@ -167,14 +171,17 @@ section{
 
 
   #construct_pg{
+    position: relative;
     margin: auto;
     margin-top: 20px;
-    width: 700px;
-    height: 700px;
+    max-width: 53%;
+    height: 75%;
+    /* background-color: yellow; */
     background-color: rgba(0, 0, 0, 0.671);
     border-radius: 10px;
     padding: 30px;
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.85);
+    min-width: 345px;
   }
 
   h1{
@@ -196,7 +203,7 @@ section{
   }
 
   #hokages{
-      width: 650px;
+      width: 100%;
       margin-top: 15px;
       border-radius: 15px;
 
@@ -206,12 +213,15 @@ section{
       position: relative;
       margin-left: 300px;
       margin-top: 20px;
-      width: 350px;
-      height: 250px;
+      width: 70;
+      height: auto;
       background-color: rgba(255, 255, 255, 0.774);
       border-radius: 15px;
       padding: 15px;
-
+      text-decoration: none;
+      text-align: justify;
+      font-size: 15pt;
+      min-width: 300px;
   }
 
   #ft_perfil{
@@ -225,7 +235,7 @@ section{
 
   hr{
       margin: auto;
-      margin-top: 25px;
+      margin-top: 30px;
       margin-left: 25px;
   }
 
@@ -242,12 +252,13 @@ section{
 }
 
 #champs{
-    position: absolute;
+    position: relative;
     background-color: rgb(255, 255, 255, 0.72);
-    width: 630px;
-    height: 300px;
-    margin: 15px 20px;
+    width: 98%;
+    height: auto;
+    margin: 15px 20px 15px 15px;
     border-radius: 15px;
+    padding-left: 12px;
 }
 
 .ft_perf{
@@ -257,12 +268,6 @@ section{
 .role{
     width: 50px;
     height: 50px;
-}
-
-#bio{
-    text-decoration: none;
-    text-align: justify;
-    font-size: 15pt;
 }
 
 .champ_text{
@@ -277,4 +282,30 @@ section{
     padding-top: 60px;
     width: 80pt;
     margin-left: 13px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    #bio{   
+        position: relative;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 85%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.774);
+        border-radius: 15px;
+        padding: 15px;
+        text-decoration: none;
+        text-align: justify;
+        font-size: 15pt;
+        min-width: 226px;
+    }
+
+    #ft_perfil{
+        position: relative;
+        margin: 20px auto  0 auto;
+        width: 250px;
+        height: 250px;
+        border-radius: 15px;
+    }
 }
