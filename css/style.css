@@ -159,19 +159,6 @@ section{
     
   }
 
-  #conteudo{
-      position: relative;
-      margin: auto;
-      margin-top: 20px;
-      width: 54%;
-      height: 75%;
-      background-color: rgba(0, 0, 0, 0.800);
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.85);
-      min-width: 440px;
-  }
-
   .cont_text{
       color: white;
   }
@@ -318,5 +305,20 @@ section{
         width: 250px;
         height: 250px;
         border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    #conteudo{
+        position: relative;
+        margin: auto;
+        margin-top: 20px;
+        width: 54%;
+        height: 75%;
+        background-color: rgba(0, 0, 0, 0.800);
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.85);
+        min-width: 440px;
     }
 }
